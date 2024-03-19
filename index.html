@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кросівки для продажу</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин кросівок</h1>
+    </header>
+    <main>
+        <section class="product">
+            <img src="sneakers.jpg" alt="Кросівки">
+            <h2>Найкросівки 2000</h2>
+            <p>Ціна: $100</p>
+            <button onclick="playJumpSoundAndRedirect()">Додати до кошика</button>
+        </section>
+        <!-- Додайте інші товари тут -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Магазин кросівок</p>
+    </footer>
+
+    <audio id="jumpSound" src="jump.mp3"></audio>
+
+    <script>
+        async function playJumpSoundAndRedirect() {
+            var audio = document.getElementById("jumpSound");
+            audio.play();
+            await new Promise(resolve => audio.onended = resolve);
+            window.location.href = "https://rt.pornhub.com/gay/categories";
+        }
+    </script>
+</body>
+</html>
